@@ -10,6 +10,9 @@ body {
   width: 100%;
   max-width: 1000px;
 }
+a {
+  text-decoration: none;
+}
 .aside {
   background-color: #202026;
   width: 30%;
@@ -18,13 +21,19 @@ body {
   position: relative;
   display: flex;
   width: 100%;
+  padding-top: 70px;
 }
 .img img {
   width: 100%;
   height: 100%;
 }
 .aside-nav {
+  display: flex;
   height: 100%;
+  flex-direction: column;
+  padding-left: 10%;
+  color: white;
+  padding-top: 50px;
 }
 .main {
   position: relative;
@@ -66,6 +75,7 @@ h1 {
 }
 .prof {
   padding-left: 2px;
+  font-weight: 600;
 }
 h2 {
   margin-bottom: 20px;
@@ -121,10 +131,73 @@ ul {
 }
 .rs-logo {
   /* display: inline-block; */
+  position: relative;
   max-width: 270px;
-  height: 100px;
+  height: 100%;
   width: 100%;
+  min-height: 50px;
 }
 h4 {
   font-size: 20px;
+}
+.aside-nav h2 {
+  font-weight: 200;
+}
+.aside-nav hr {
+  color: #fecb00;
+}
+.contacts {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+.contacts a {
+  display: flex;
+  color: #fecb00;
+}
+.contacts li {
+  list-style-type: none;
+}
+.contacts a::before {
+  content: "";
+  display: block;
+  height: 32px;
+  width: 5px;
+  position: relative;
+  left: -55px;
+  top: -8px;
+  background-color: #fecb00;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+.contacts a:hover::before {
+  width: 60px;
+  color: white;
+}
+.projects {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+.projects a {
+  display: flex;
+  color: #fecb00;
+}
+.projects li {
+  list-style-type: none;
+}
+.projects a::before {
+  content: "";
+  display: block;
+  height: 32px;
+  width: 5px;
+  position: relative;
+  left: -55px;
+  top: -8px;
+  background-color: #fecb00;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+.projects a:hover::before {
+  width: 60px;
 }
