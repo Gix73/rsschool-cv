@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  background-color: black;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1000px;
+}
+.aside {
+  background-color: #202026;
+  width: 30%;
+}
+.img {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+.img img {
+  width: 100%;
+  height: 100%;
+}
+.aside-nav {
+  height: 100%;
+}
+.main {
+  position: relative;
+  max-width: 580px;
+  width: 100%;
+  padding-left: 50px;
+  font-family: "Rubik", sans-serif;
+}
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-family: "Rubik", sans-serif;
+}
+.head {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background-color: #fecb00;
+  padding: 65px 50px;
+  font-family: "Rubik", sans-serif;
+  margin-bottom: 50px;
+}
+.main-container {
+  width: 70%;
+  padding-top: 70px;
+  background-color: rgb(255, 255, 255);
+}
+h1 {
+  display: none;
+}
+.FIO {
+  width: 100%;
+}
+.FIO span {
+  font-weight: 600;
+  font-size: 47px;
+}
+.prof {
+  padding-left: 2px;
+}
+h2 {
+  margin-bottom: 20px;
+}
+hr {
+  margin-bottom: 20px;
+}
+p {
+  line-height: 25px;
+}
+.education {
+  margin-bottom: 20px;
+}
+.purpose {
+  margin-bottom: 20px;
+}
+.work {
+  margin-bottom: 20px;
+}
+li {
+  list-style-type: circle;
+  margin-left: 25px;
+  line-height: 28px;
+}
+ul {
+  margin-bottom: 20px;
+}
+.ul-skills {
+  margin: 0;
+}
+.ul-skills li {
+  list-style-type: disc;
+}
+.code-hr {
+  margin: 0;
+}
+.footer {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background-color: #fecb00;
+  padding: 65px 50px;
+  font-family: "Rubik", sans-serif;
+}
