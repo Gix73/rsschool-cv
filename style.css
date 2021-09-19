@@ -29,7 +29,6 @@ a {
 }
 .aside-nav {
   display: flex;
-  height: 100%;
   flex-direction: column;
   padding-left: 10%;
   color: white;
@@ -137,7 +136,7 @@ ul {
   width: 100%;
   min-height: 50px;
 }
-h4 {
+h3 {
   font-size: 20px;
 }
 .aside-nav h2 {
