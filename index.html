@@ -11,23 +11,34 @@
 
 <body>
     <div class="container">
+        <nav class="nav">
+           <ul>
+               <li><a href="#purpose">Purpose</a></li>
+               <li><a href="#education">Education</a></li>
+               <li><a href="#work">Work experience</a></li>
+               <li><a href="#lang">Languages</a></li>
+               <li><a href="#skills">Skills</a></li>
+               <li><a href="#code">Code example</a></li>
+           </ul> 
+        </nav>
         <aside class="aside">
             <h1>CV</h1>
             <div class="img">
                 <img src="./images/zelenskij-proklyate.jpg" alt="Avatar">
             </div>        
-            <nav class="aside-nav">
+            <div class="aside-nav"> 
                 <h2>CONTACS</h2>
-                <hr>
-                <section class="contacts">
+                <hr>               
+                <address class="contacts">
                     <ul>
                         <li><a href="tel:+375292111511">+375292111511</a></li>
                         <li><a href="mailto:gix73@yandex.ru">Yandex mail</a></li>
                     </ul>
-                </section>
-                <h2>PROJECTS</h2>
-                <hr>
-                <section class="projects">
+                </address>
+                
+                <section id="prj" class="projects">
+                    <h2>PROJECTS</h2>
+                    <hr>
                     <ul>
                         <li>
                             <a href="https://rolling-scopes-school.github.io/gix73-JSFE2021Q1/photo-filter/">Photo-filter</a>
@@ -37,7 +48,7 @@
                         </li>
                     </ul>
                 </section>
-            </nav>
+            </div>
         </aside>
         <div class="main-container">
             <header class="head">
@@ -52,10 +63,10 @@
                 <section class="about">
                 <h2>ABOUT ME</h2>
                 <hr>
-                <h2>Purpose</h2>
+                <h2 id="purpose">Purpose</h2>
                 <p class="purpose"> Acquiring practical and theoretical skills in the IT sphere for further employment.</p>
                 <h2>Education</h2>
-                <p class="education">
+                <p class="education" id="education">
                     Secondary specialized (software technician).
                     I studied for 4 years at the Orsha’s College of Vitebsk State University named after
                     P.M. Masherov on the specialty “Information Technology Software”.
@@ -64,17 +75,17 @@
                     I am studying in the third year of the specialty “Information Technology Software”.
                 </p>
                 
-                <h2>Work experience</h2>
+                <h2 id="work">Work experience</h2>
                 <p class="work">
                     None.
                     But I am interested in learning English and modern web technologies.
                 </p>
-                <h2>Languages</h2>
+                <h2 id="lang">Languages</h2>
                 <ul class="lang">
                     <li>Russian - native speaker</li>
                     <li>English - A2</li>
                 </ul>
-                <h2>Skills:</h2>
+                <h2 id="skills">Skills:</h2>
                 <ul>
                     <li>Basic knowledge of: 
                         <ul class="ul-skills">
@@ -86,10 +97,10 @@
                     <li>Learning JS for one month.</li>
                 </ul>
                 </section>
-                <section class="code-ex">
+                <section id="code" class="code-ex">
                     <h2>CODE EXAMPLE</h2>
                     <hr class="code-hr">
-                    <pre>  
+                    <pre class="pre">  
                         <code>
     static int[] RandomPermutation(int[] a)
     {
@@ -113,7 +124,9 @@
                 <a href="https://github.com/Gix73" target="_blank" >
                     <img class="git-logo" src="images/github.svg" alt="git_logo">
                 </a>
-                <h3>2021</h3>
+                <time datetime="2021">
+                    <h3>2021</h3>
+                </time>
                 <a href="https://rs.school/js/" target="_blank">
                     <img class="rs-logo" src="images/rs_school_js.svg" alt="rs_logo">
                 </a>
