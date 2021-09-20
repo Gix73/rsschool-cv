@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="nav">
+            <img id="burg" class="burger-menu" src="./images/burger.svg" alt="burger-menu">
+           <ul class="nav-ul">
+               <li><a href="#purpose">Purpose</a></li>
+               <li><a href="#education">Education</a></li>
+               <li><a href="#work">Work experience</a></li>
+               <li><a href="#lang">Languages</a></li>
+               <li><a href="#skills">Skills</a></li>
+               <li><a href="#code">Code example</a></li>
+           </ul> 
+        </nav>
+        <aside class="aside">
+            <h1>CV</h1>
+            <div class="img">
+                <img src="./images/zelenskij-proklyate.jpg" alt="Avatar">
+            </div>        
+            <div class="aside-nav"> 
+                <h2>CONTACS</h2>
+                <hr>               
+                <address class="contacts">
+                    <ul>
+                        <li><a href="tel:+375292111511">+375292111511</a></li>
+                        <li><a href="mailto:gix73@yandex.ru">Yandex mail</a></li>
+                    </ul>
+                </address>
+                
+                <section id="prj" class="projects">
+                    <h2>PROJECTS</h2>
+                    <hr>
+                    <ul>
+                        <li>
+                            <a href="https://rolling-scopes-school.github.io/gix73-JSFE2021Q1/photo-filter/">Photo-filter</a>
+                        </li>
+                        <li>
+                            <a href="https://rolling-scopes-school.github.io/gix73-JSFE2021Q1/online-zoo/">Online zoo</a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </aside>
+        <div class="main-container">
+            <header class="head">
+                <div class="FIO">
+                    <span>KISEL DZMITRIY</span>
+                </div>
+                <div class="prof">
+                    <span>FUTURE FRONT-END DEVELOPER</span>
+                </div>
+            </header>
+            <main class="main">
+                <section class="about">
+                <h2>ABOUT ME</h2>
+                <hr>
+                <h2 id="purpose">Purpose</h2>
+                <p class="purpose"> Acquiring practical and theoretical skills in the IT sphere for further employment.</p>
+                <h2>Education</h2>
+                <p class="education" id="education">
+                    Secondary specialized (software technician).
+                    I studied for 4 years at the Orsha’s College of Vitebsk State University named after
+                    P.M. Masherov on the specialty “Information Technology Software”.
+
+                    Now I am a student of Vitebsk State University named after P.M.Masherov.
+                    I am studying in the third year of the specialty “Information Technology Software”.
+                </p>
+                
+                <h2 id="work">Work experience</h2>
+                <p class="work">
+                    None.
+                    But I am interested in learning English and modern web technologies. I have some projects like online zoo and photo filter.
+                    I used Html CSS & JavaScript. Photo filter can change image's property. Online zoo - is simple web-site.
+
+                    <a href="https://rolling-scopes-school.github.io/gix73-JSFE2021Q1/photo-filter/" target="_blank">
+                        <div class="project-container">
+                          <img class="project-logo" src="images/fiter.jpg" alt="photo-filter">
+                          <p>Photo filter</p>
+                        </div>
+                    </a>
+                    <a href="https://rolling-scopes-school.github.io/gix73-JSFE2021Q1/online-zoo/" target="_blank">
+                        <div class="project-container">
+                          <img class="project-logo" src="images/zoo.jpg" alt="online-zoo">
+                          <p>Online zoo</p>
+                        </div>
+                    </a>
+                </p>
+                <h2 id="lang">Languages</h2>
+                <ul class="lang">
+                    <li>Russian - native speaker</li>
+                    <li>English - A2</li>
+                </ul>
+                <h2 id="skills">Skills:</h2>
+                <ul>
+                    <li>Basic knowledge of: 
+                        <ul class="ul-skills">
+                            <li >C++</li>
+                            <li>C#</li>
+                            <li>HTML & CSS</li>                            
+                        </ul>
+                    </li>
+                    <li>Learning JS for one month.</li>
+                </ul>
+                </section>
+                <section id="code" class="code-ex">
+                    <h2>CODE EXAMPLE</h2>
+                    <hr class="code-hr">
+                    <pre class="pre">  
+                        <code>
+    static int[] RandomPermutation(int[] a)
+    {
+        Random random = new Random();
+        var n = a.Length;
+        while (n > 1)
+        {
+            n--;
+            var i = random.Next(n + 1);
+            var temp = a[i];
+            a[i] = a[n];
+            a[n] = temp;
+        }
+        return a;
+    }
+                        </code>
+                    </pre>
+                </section>
+            </main>
+            <footer class="footer">
+                <a href="https://github.com/Gix73" target="_blank" >
+                    <img class="git-logo" src="images/github.svg" alt="git_logo">
+                </a>
+                <h3>
+                    <time datetime="2021">2021</time>
+                </h3>
+                <a href="https://rs.school/js/" target="_blank">
+                    <img class="rs-logo" src="images/rs_school_js.svg" alt="rs_logo">
+                </a>
+            </footer>
+        </div>
+       
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
