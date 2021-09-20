@@ -126,8 +126,20 @@ ul {
   align-items: center;
   justify-content: space-between;
 }
+.project-container {
+  margin: 0 auto;
+  max-width: 300px;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid rgb(226, 226, 226);
+  margin-bottom: 20px;
+}
+.project-logo {
+  display: block;
+  margin: 5px auto;
+  width: calc(100% - 10px);
+}
 .git-logo {
-  /* display: inline-block; */
   max-width: 100px;
   max-height: 100px;
   width: 100%;
