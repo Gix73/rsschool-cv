@@ -298,6 +298,12 @@ h3 {
     width: 20px;
     color: white;
   }
+  .git-logo {
+    max-width: 70px;
+  }
+  .rs-logo {
+    max-width: 116px;
+  }
 }
 @media screen and (max-width: 622px) {
   .burger-menu {
@@ -316,14 +322,55 @@ h3 {
     left: 15px;
     width: 95%;
     height: 360px;
-    background-color: rgba(37, 66, 206, 0.5);
+    background-color: rgba(37, 66, 206, 0.7);
     color: #fff;
     font-size: 18px;
     flex-direction: column;
     align-items: center;
     border-radius: 2px;
   }
+  .nav ul li a {
+    font-size: 16px;
+    font-weight: 600;
+    color: yellow;
+  }
   .nav ul li:nth-child(6) {
     padding-right: 0;
+  }
+}
+@media screen and (max-width: 543px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav {
+    top: 0;
+  }
+  .aside {
+    width: 90%;
+  }
+  .img {
+    height: auto;
+  }
+  .main-container {
+    width: 90%;
+  }
+  .aside-nav a::before {
+    left: -80px;
+  }
+  .aside-nav a:hover::before {
+    width: 25%;
+  }
+  .nav ul {
+    left: 2%;
+  }
+  .footer {
+    padding: 65px 10px;
+  }
+  .git-logo {
+    max-width: 70px;
+  }
+  .rs-logo {
+    max-width: 116px;
   }
 }
